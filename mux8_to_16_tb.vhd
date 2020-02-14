@@ -68,7 +68,6 @@ begin
                                
     stim_proc: process
     begin
-        wait for 5ns;
         In0 <= "0000000000000000";
         In1 <= "0000000000000001";
         In2 <= "0000000000000010";
@@ -77,38 +76,37 @@ begin
         In5 <= "0000000000000101";
         In6 <= "0000000000000110";
         In7 <= "0000000000000111";
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '0';
         S1 <= '0';
         S2 <= '0';
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '0';
         S1 <= '0';
         S2 <= '1';
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '0';
         S1 <= '1';
         S2 <= '0';
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '0';
         S1 <= '1';
         S2 <= '1';
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '1';
         S1 <= '0';
         S2 <= '0';
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '1';
         S1 <= '0';
         S2 <= '1';
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '1';
         S1 <= '1';
         S2 <= '0';
-        wait for 5ns;
+        wait for 10ns;
         S0 <= '1';
         S1 <= '1';
         S2 <= '1';
-        wait for 5ns;
        end process;
 end Behavioral;
