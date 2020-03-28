@@ -61,8 +61,8 @@ component mux2_to_1
     
     stim_proc: process
     begin
-    In0<="000000000000000000";
-    In1<="000000000000000001";
+    In0<="0000000000000000";
+    In1<="0000000000000001";
     wait for 5ns;
     s<='1';
     wait for 5ns;
